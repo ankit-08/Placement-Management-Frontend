@@ -14,7 +14,7 @@ import{ViewappliedstudentComponent} from './viewappliedstudent/viewappliedstuden
 import{ViewplacedstudentComponent} from './viewplacedstudent/viewplacedstudent.component';
 import{AfterstudentloginComponent} from './afterstudentlogin/afterstudentlogin.component';
 import{AftertpologinComponent} from './aftertpologin/aftertpologin.component';
-import{ViewcompanybydeptComponent} from './viewcompanybydept/viewcompanybydept.component';
+import{ViewIncomingcompanybydeptComponent} from './viewincomingcompanybydept/viewincomingcompanybydept.component';
 import{StudentafterloginComponent} from'./studentafterlogin/studentafterlogin.component';
 import{TpoafterloginComponent} from './tpoafterlogin/tpoafterlogin.component'
 import{AddincomingcompanyComponent} from './addincomingcompany/addincomingcompany.component';
@@ -82,8 +82,8 @@ const routes: Routes = [
     // not using
   },
   {
-    path: 'viewcompanybydept',
-    component: ViewcompanybydeptComponent
+    path: 'viewincomingcompanybydept',
+    component: ViewIncomingcompanybydeptComponent
   },
   {
     path: 'studentafterlogin',

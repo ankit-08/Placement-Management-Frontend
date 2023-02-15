@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 
 // Used models
-import { Placedstudent } from '../_models/placedstudent';
+import { Placedstudents } from '../_models/placedstudents';
 
 import { Studentdetails } from '../_models/studentdetails';
 import { Incomingcompany } from '../_models/incomingcompany';
@@ -22,10 +22,11 @@ export class TposerviceService {
   }
   
   viewSearchedRecords(stdobj:any){
-    console.log('INSIDE ANGULAR SERVICE')
+    
     
     return this.http.post('http://localhost:8082/viewSearchedRecords',stdobj);
   }
+  
   AddIncomingCompany(incobj:any){
     return this.http.post('http://localhost:8082/AddIncomingCompany',incobj);
   }

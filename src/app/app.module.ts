@@ -26,7 +26,7 @@ import { AfterstudentloginComponent } from './afterstudentlogin/afterstudentlogi
 import { AftertpologinComponent } from './aftertpologin/aftertpologin.component';
 import { StudentnavComponent } from './studentnav/studentnav.component';
 import { TponavComponent } from './tponav/tponav.component';
-import { ViewcompanybydeptComponent } from './viewcompanybydept/viewcompanybydept.component';
+import { ViewIncomingcompanybydeptComponent } from './viewincomingcompanybydept/viewincomingcompanybydept.component';
 import { StudentafterloginComponent } from './studentafterlogin/studentafterlogin.component';
 import { TpoafterloginComponent } from './tpoafterlogin/tpoafterlogin.component';
 import { ViewallstudentrecordsComponent } from './viewallstudentrecords/viewallstudentrecords.component';
@@ -35,7 +35,7 @@ import { AddincomingcompanyComponent } from './addincomingcompany/addincomingcom
 // added model
 
 import{Studentdetails} from './_models/studentdetails';
-import{Placedstudent} from './_models/placedstudent';
+import{Placedstudents} from './_models/placedstudents';
 import{Incomingcompany} from './_models/incomingcompany'
 
 
@@ -59,7 +59,7 @@ import{Incomingcompany} from './_models/incomingcompany'
     AftertpologinComponent,
     StudentnavComponent,
     TponavComponent,
-    ViewcompanybydeptComponent,
+    ViewIncomingcompanybydeptComponent,
     StudentafterloginComponent,
     TpoafterloginComponent,
     AddincomingcompanyComponent,
@@ -73,7 +73,7 @@ import{Incomingcompany} from './_models/incomingcompany'
   ],
   providers: [
     Studentdetails,
-    Placedstudent,
+    Placedstudents,
     Incomingcompany
   ],
   bootstrap: [AppComponent]

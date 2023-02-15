@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 
-import { Placedstudent } from '../_models/placedstudent';
+import { Placedstudents } from '../_models/placedstudents';
 import { TposerviceService } from '../_services/tposervice.service';
 
 @Component({
@@ -15,7 +15,7 @@ export class AddplacedstudentComponent implements OnInit {
   public Showmsg: string="";
 
   constructor(
-    public dataobj: Placedstudent,
+    public dataobj: Placedstudents,
     public serviceobj: TposerviceService
   ) { }
 
@@ -31,7 +31,7 @@ export class AddplacedstudentComponent implements OnInit {
     this.serviceobj.AddPlacedStudent(this.dataobj).subscribe((response: any) => {
       console.log('GOT REPLY FROM SPRINGBOOT');
       console.log(response);
-      this.Showmsg = 'COMPANY ADDED';
+      this.Showmsg = 'STUDENT DETAILS ADDED';
       this.resetRegForm(form);
     });
   }

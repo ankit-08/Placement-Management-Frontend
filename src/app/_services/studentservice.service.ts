@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 
-import { Placedstudent } from '../_models/placedstudent';
+import { Placedstudents } from '../_models/placedstudents';
 
 import { Studentdetails } from '../_models/studentdetails';
 import { Incomingcompany } from '../_models/incomingcompany';
@@ -23,7 +23,12 @@ export class StudentserviceService {
     return this.http.post('http://localhost:8082/StudentLoginCheck',stdobj);
   }
 
+  viewplacedstudent(dataobj:any){
+    return this.http.post('http://localhost:8082/viewplacedstudent',dataobj);
+  }
+
+
   viewincomingcompany(){}
   applycompany(){}
-  viewplacedstudent(){}
+  
 }

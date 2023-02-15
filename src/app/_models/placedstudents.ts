@@ -1,4 +1,4 @@
-export class Placedstudent {
+export class Placedstudents {
     public student_name:String="";
     public registration_number:String="";
     public department:String="";

@@ -1,0 +1,57 @@
+<app-tponav></app-tponav>
+<body>
+    <div class="container">
+        <div class="title">Add Incoming Company</div>
+        <div class="backend_message">
+            <h3>{{Showmsg}}</h3>
+        </div>
+        <div class="content">
+            <form #userform="ngForm" (ngSubmit)="onSubmit(userform)">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Company ID</span>
+                        <input type="number" name="company_id" placeholder="Company ID"
+                            [(ngModel)]="incobj.company_id" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Company Name</span>
+                        <input type="text" name="company_name" placeholder="Company Name"
+                            [(ngModel)]="incobj.company_name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Company Address</span>
+                        <input type="text" name="company_address" placeholder="Company Address"
+                            [(ngModel)]="incobj.company_address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Job Location</span>
+                        <input type="text" name="Job_loaction" placeholder="Location"
+                            [(ngModel)]="incobj.Job_loaction" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">CTC</span>
+                        <input type="number" name="ctc" placeholder="CTC" [(ngModel)]="incobj.ctc"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Requirement</span>
+                        <input type="text" name="requirement" placeholder="Requirement" [(ngModel)]="incobj.requirement"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="date" name="date" placeholder="Date"
+                            [(ngModel)]="incobj.date" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="ADD">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>

@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Josefin Sans', sans-serif,Abril Fatface;
-    /* background: -webkit-linear-gradient(to right, #71b7e6, #9b59b6);  
-    background: linear-gradient(135deg, #71b7e6, #9b59b6); 
-    */
-   background-image: url(./images/wallpaper.jpg); 
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif, Abril Fatface;
+  background: #093028;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #237A57, #093028);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #237A57, #093028);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

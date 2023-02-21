@@ -1,5 +1,4 @@
 <app-studentnav></app-studentnav>
-
 <body>
     <div class="container">
         <div class="title">Search Placed Students</div>
@@ -24,33 +23,34 @@
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="SUBMIT">
+                    <input type="submit" value="VIEW">
                 </div>
             </form>
         </div>
-    </div>
-    <div class="table" *ngIf="showtable">
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>NAME</th>
-                    <th>REGD. NO.</th>
-                    <th>DEPARTMENT</th>
-                    <th>COMPANY ID</th>
-                    <th>COMPANY NAME</th>
-                    <th>ACADEMIC YEAR</th>
+        <div class="table" *ngIf="showtable">
+            <table id="student-details">
+                <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>REGD. NO.</th>
+                        <th>DEPARTMENT</th>
+                        <th>COMPANY ID</th>
+                        <th>COMPANY NAME</th>
+                        <th>ACADEMIC YEAR</th>
+                    </tr>
+                </thead>
+    
+                <tr *ngFor="let dataobj of placedstudentsarr">
+                    <td>{{dataobj.student_name}}</td>
+                    <td>{{dataobj.registration_number}}</td>
+                    <td>{{dataobj.department}}</td>
+                    <td>{{dataobj.company_id}}</td>
+                    <td>{{dataobj.company_name}}</td>
+                    <td>{{dataobj.academic_year}}</td>
+    
                 </tr>
-            </thead>
-
-            <tr *ngFor="let dataobj of placedstudentsarr">
-                <td>{{dataobj.student_name}}</td>
-                <td>{{dataobj.registration_number}}</td>
-                <td>{{dataobj.department}}</td>
-                <td>{{dataobj.company_id}}</td>
-                <td>{{dataobj.company_name}}</td>
-                <td>{{dataobj.academic_year}}</td>
-
-            </tr>
-        </table>
+            </table>
+        </div>
     </div>
+    
 </body>

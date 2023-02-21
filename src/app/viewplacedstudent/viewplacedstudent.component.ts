@@ -31,7 +31,7 @@ export class ViewplacedstudentComponent implements OnInit {
           this.showtable = true
         }
         else {
-          this.Showmsg = "INVALID EMAIL ID"
+          this.Showmsg = "Select any department"
           this.showtable = false
 
         }

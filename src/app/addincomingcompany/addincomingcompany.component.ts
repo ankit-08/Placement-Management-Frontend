@@ -19,6 +19,8 @@ export class AddincomingcompanyComponent implements OnInit {
   ) {}
   
 
+    
+
   onSubmit(form: NgForm) {
     console.log('INSIDE ONSUBMIT METHOD');
     console.log(this.incobj.company_id);
@@ -35,6 +37,8 @@ export class AddincomingcompanyComponent implements OnInit {
       this.Showmsg = 'COMPANY ADDED';
       this.resetRegForm(form);
     });
+
+    
   }
 
   resetRegForm(form: NgForm) {
@@ -44,3 +48,5 @@ export class AddincomingcompanyComponent implements OnInit {
     
   }
 }
+
+

@@ -6,4 +6,5 @@ export class Incomingcompany {
     public ctc :String="";
     public requirement :String="";
     public date :String=""; 
+    public department :String="";
 }

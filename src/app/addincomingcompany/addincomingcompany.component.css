@@ -72,7 +72,7 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color: #9b59b6;
 }
- form .gender-details .gender-title{
+ form .department-details .department-title{
   font-size: 20px;
   font-weight: 500;
  }
@@ -87,22 +87,28 @@ form .input-box span.details{
    align-items: center;
    cursor: pointer;
  }
- form .category label .dot{
+ form .category label .square{
   height: 18px;
   width: 18px;
-  border-radius: 50%;
+  border-radius: 40%;
   margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
- #dot-1:checked ~ .category label .one,
- #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
+/* input:checked ~ .category label .square{ */
+ #department-1:checked ~ .category label .one,
+ #department-2:checked ~ .category label .two ,
+ #department-3:checked ~ .category label .three ,
+ #department-4:checked ~ .category label .four ,
+ #department-5:checked ~ .category label .five ,
+ #department-6:checked ~ .category label .six ,
+ #department-7:checked ~ .category label .seven {
    background: #9b59b6;
    border-color: #d9d9d9;
  }
- form input[type="radio"]{
+
+ form input[type="checkbox"]{
    display: none;
  }
  form .button{
